@@ -190,12 +190,12 @@ nav div {
 @media (max-width: 500px) {
   nav div {
     flex-direction: column;
-    justify-content: center;
   }
 }
 @media (max-width: 500px) {
   nav div .linkWrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
   }
 }
@@ -209,7 +209,7 @@ nav div .logo {
 }
 @media (max-width: 500px) {
   nav div .logo {
-    margin: 1%;
+    margin: 1% auto;
   }
 }
 .footer {
@@ -230,7 +230,7 @@ header section {
 }
 @media (max-width: 500px) {
   header section {
-    padding: 0 10%;
+    margin: 0 10%;
   }
 }
 .home .content-section {
