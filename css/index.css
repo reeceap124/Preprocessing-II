@@ -202,6 +202,7 @@ nav .logo {
 header section {
   max-width: 800px;
   margin: 0 auto;
+  border-bottom: 2px dashed silver;
 }
 .home .content-section {
   margin: 30px 0;
@@ -248,4 +249,13 @@ header section {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: block;
+  background-color: #17A2B8;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #212529;
 }
