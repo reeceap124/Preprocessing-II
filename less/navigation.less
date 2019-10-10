@@ -2,22 +2,41 @@
 nav {
     display: flex;
     justify-content: center;
+    margin-top: 1%;
+    border-bottom: 2px dashed silver;
     div{
         max-width: 800px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        align-items: flex-start;
         font-size: 1.6rem;
-    }
-    
-    border-bottom: 2px dashed silver;
-    a {
-        text-decoration: none;
-        margin: 1%;
-        color: @font-color;
-    }
-    
-    .logo {
-        margin: 1% auto 1% 0;
-    }
+
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center; 
+        }
+
+        .linkWrapper{
+            @media @mobile {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            margin: 2%;
+            color: @font-color;
+        }
+        
+        .logo {
+            margin: 1% auto 1% 0;
+
+            @media @mobile {
+                margin: 1%;
+            }
+            
+        }
+    } 
 }
